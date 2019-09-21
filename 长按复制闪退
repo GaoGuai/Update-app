@@ -1,0 +1,13 @@
+创建一个子页面，直接从首页进入子页面，在子页面中的启动项里面输入下面代码
+
+shijian=0
+function onKeyDown(code,event)
+  if string.find(tostring(event),"KEYCODE_BACK") ~= nil then
+    if shijian+2 > tonumber(os.time()) then 
+      退出程序()
+    end
+    弹出消息("再按一下退出键退出程序")
+    shijian=tonumber(os.time())
+    return true
+  end
+end
