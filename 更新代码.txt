@@ -1,14 +1,3 @@
-shijian=0
-function onKeyDown(code,event)
-  if string.find(tostring(event),"KEYCODE_BACK") ~= nil then
-    if shijian+2 > tonumber(os.time()) then 
-      退出程序()
-    end
-    弹出消息("再按一下退出键退出程序")
-    shijian=tonumber(os.time())
-    return true
-  end
-end
 --检测更新
 urla="http://www.iyuji.cn/iyuji/s/WSt2cUYvSWRaVjNEZjNZZDg5UGdGUT09/1568976310433951"
 canoffline=false
